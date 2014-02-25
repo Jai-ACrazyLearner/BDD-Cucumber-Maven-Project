@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariDriver;
+
 public class BrowserFactory {
 
 	public static WebDriver driver;
@@ -27,7 +27,7 @@ public class BrowserFactory {
 				break;
 			case "Safari":
 				try{
-				driver = new SafariDriver();
+			//	driver = new SafariDriver();
 				}
 				 catch(Exception e)
 		            {

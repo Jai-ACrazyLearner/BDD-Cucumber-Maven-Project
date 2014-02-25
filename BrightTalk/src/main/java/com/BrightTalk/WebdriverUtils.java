@@ -6,9 +6,9 @@ import junit.framework.Assert;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class WebdriverUtils extends BrowserFactory{
 
@@ -29,11 +29,11 @@ public class WebdriverUtils extends BrowserFactory{
 		
     	driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
 	}
-    public static void explicitWait(int i, String id) {
-    
-    	WebElement myDynamicElement = (new WebDriverWait(driver, i))
-    	  .until(ExpectedConditions.presenceOfElementLocated(By.id(id)));	
-	}
+//    public static void explicitWait(int i, String id) {
+//    
+//    	WebElement myDynamicElement = (new WebDriverWait(driver, i))
+//    	  .until(ExpectedConditions.presenceOfElementLocated(By.id(id)));	
+//	}
     public static boolean isTextPresent(String text) {
         return driver.findElement(By.tagName("body")).getText().contains(text);
     }

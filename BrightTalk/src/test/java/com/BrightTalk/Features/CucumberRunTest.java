@@ -8,6 +8,6 @@ import cucumber.api.junit.Cucumber;
 @Cucumber.Options(
 format={"html:target/BrightTalkcucumber"},
 tags ="@Login,@contentExplorer,@Signup")
-public class CucumberRunFeatures {}
+public class CucumberRunTest {}
 
 
