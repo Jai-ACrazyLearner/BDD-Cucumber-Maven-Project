@@ -24,7 +24,8 @@ public class F002_ContentExplore extends BrowserFactory implements MethodsInterf
 	@Before
 	public void SelectBrowser() {
 		try {
-			BrowserFactory.selectingBrowserInLocalMachineorGrid("Firefox");
+			BrowserFactory.selectingBrowserInLocalMachineorGrid("Chrome");
+			BrowserFactory.driver.manage().window().maximize();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
